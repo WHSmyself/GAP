@@ -1,0 +1,28 @@
+name: gehybrid
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools
+  - wheel
+  - pip:
+      # PyTorch 2.0.0 with CUDA 11.7 runtime
+      - --extra-index-url https://download.pytorch.org/whl/cu117
+      # PyTorch Geometric extension wheels matched to torch-2.0.0+cu117
+      - --find-links https://data.pyg.org/whl/torch-2.0.0+cu117.html
+      - torch==2.0.0+cu117
+      - torch-scatter==2.1.2+pt20cu117
+      - torch-sparse==0.6.18+pt20cu117
+      - torch-cluster==1.6.3+pt20cu117
+      - torch-spline-conv==1.2.2+pt20cu117
+      - pyg-lib==0.4.0+pt20cu117
+      - torch-geometric==2.6.1
+      - numpy==1.26.4
+      - pandas==2.2.3
+      - scipy==1.13.1
+      - scikit-learn==1.5.2
+      - joblib==1.4.2
+      - optuna==4.3.0
+      - tqdm==4.66.5
