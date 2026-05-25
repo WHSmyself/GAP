@@ -3,6 +3,14 @@
 This repository provides a compiled Linux release of a G×E graph neural network model for phenotype prediction.  
 The model integrates genotype graph information and environment features to predict target traits such as yield.
 
+
+## Model architecture
+
+The overall architecture of the G×E graph neural network model is shown below.
+
+![GAP model architecture](figures/GAP_model_architecture.png)
+
+
 ---
 
 ## 1. Quick installation
